@@ -1,7 +1,7 @@
 # Tidepool notes to Nightscout syncer
 Sync Tidepool notes to your Nightscout site
 
-If you or a care taker of the T1D is using the [Tidepool](https://www.tidepool.org/) Mobile app to [add treatment notes](https://support.tidepool.org/hc/en-us/articles/360029369292-Adding-and-deleting-a-note-in-Tidepool-Mobile), and you want them to show up in [Nightscout](https://github.com/nightscout/cgm-remote-monitor), this is the app for you. 
+If you or a caretaker of the T1D is using the [Tidepool](https://www.tidepool.org/) Mobile app to [add treatment notes](https://support.tidepool.org/hc/en-us/articles/360029369292-Adding-and-deleting-a-note-in-Tidepool-Mobile), and you want them to show up in [Nightscout](https://github.com/nightscout/cgm-remote-monitor), this is the app for you. 
 
 The script will add new treatment notes to Nightscout if it finds them in Tidepool. 
 
@@ -49,7 +49,7 @@ You should run this as a cron job or use Heroku Scheduler to run it every 10 min
 
 `heroku apps:create tidepool-notes-to-nightscout`
 
-2. Add all the environment variables to your app in Heroku in the *Settings* page under *Reveal Config vars* on your apps Heroku dashboard.
+2. Add all the environment variables to your app in Heroku in the *Settings* page under *Reveal Config vars* on your app's Heroku dashboard.
 
 3. Test the script by running `heroku run npm run sync-treatments`
 

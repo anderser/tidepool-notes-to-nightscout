@@ -1,3 +1,4 @@
+require('dotenv').config();
 import getTidepoolNotes from './lib/tidepool';
 import NightscoutClient from './lib/nightscout';
 

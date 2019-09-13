@@ -13,7 +13,6 @@ async function getTidepoolNotes(startTime='2019-01-01T00:00:00.000Z', endDate=nu
   const response = await axios.post(`${apiHost}/auth/login`, null, axiosConfig);
   const userId = response.data.userid;
   const sessionToken = response.headers['x-tidepool-session-token'];
-  console.log(sessionToken)
   const dataResponse = await axios.get(`${apiHost}/message/notes/${userId}?starttime=${startTime}`, {
     headers: {
       'x-tidepool-session-token': sessionToken,

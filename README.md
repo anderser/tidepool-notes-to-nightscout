@@ -51,6 +51,8 @@ You should run this as a cron job or use Heroku Scheduler to run it every 10 min
 
 2. Add all the environment variables to your app in Heroku in the *Settings* page under *Reveal Config vars* on your app's Heroku dashboard.
 
+2. Add the extra config var `NPM_CONFIG_PRODUCTION=false` to Heroku
+
 3. Test the script by running `heroku run npm run sync-treatments`
 
 4. Add 'Heroku Scheduler* as add-on under *Resources* 
